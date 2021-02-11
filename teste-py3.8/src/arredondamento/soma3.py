@@ -9,4 +9,5 @@ def soma_int(x: int, y: int):
     return (x + y) / 100
 
 
+print('1.3 + 2.1 = ', end=f'')
 print(soma(1.3, 2.1))
