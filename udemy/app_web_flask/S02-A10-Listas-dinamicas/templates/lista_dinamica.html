@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Dinámica de Frutas</title>
+</head>
+<body>
+    <h2 style="text-align: center">Lista Dinámica de Frutas</h2>
+    <form action="{{ url_for('home') }}" method="POST">
+        <label>Fruta</label>
+        <input type="text" name="fruta">
+        <button>Adicionar</button>
+    </form>
+    <p></p>
+    {% for fruta in frutas %}
+        <li>{{ fruta }}</li>
+    {% endfor %}
+</body>
+</html>
