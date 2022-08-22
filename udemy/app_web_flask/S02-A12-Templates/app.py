@@ -4,23 +4,23 @@ frutas = []
 registros = []
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route("/", methods=["GET", "POST"])
 def home():
-    if request.method == 'POST':
-        if request.form.get('fruta'):
-            frutas.append(request.form.get('fruta'))
-    return render_template('lista_dinamica.html', frutas=frutas)
+    if request.method == "POST":
+        if request.form.get("fruta"):
+            frutas.append(request.form.get("fruta"))
+    return render_template("frutas.html", frutas=frutas)
 
 
-@app.route('/alunos', methods=['GET', 'POST'])
+@app.route("/alunos", methods=["GET", "POST"])
 def alunos():
-    if request.method == 'POST':
-        if request.form.get('aluno') and request.form.get('nota'):
-            registros.append({'aluno': request.form.get('aluno'),
-                              'nota': request.form.get('nota')
+    if request.method == "POST":
+        if request.form.get("aluno") and request.form.get("nota"):
+            registros.append({"aluno": request.form.get("aluno"),
+                              "nota": request.form.get("nota")
                               })
-    return render_template('alunos.html', registros=registros)
+    return render_template("alunos.html", registros=registros)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
