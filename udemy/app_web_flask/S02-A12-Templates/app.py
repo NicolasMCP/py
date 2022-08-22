@@ -22,5 +22,5 @@ def alunos():
     return render_template("alunos.html", registros=registros)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__""":
     app.run(debug=True)
