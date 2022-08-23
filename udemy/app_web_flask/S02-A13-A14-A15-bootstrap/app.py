@@ -16,9 +16,13 @@ def home():
 def alunos():
     if request.method == "POST":
         if request.form.get("aluno") and request.form.get("nota"):
-            registros.append({"aluno": request.form.get("aluno"),
-                              "nota": request.form.get("nota")
-                              })
+            existe = False
+            for registro in registros:
+                if request.form.get("aluno") == registro["aluno"]:
+                    existe = True
+            if not existe:
+                registros.append({"aluno": request.form.get("aluno"),
+                                  "nota": request.form.get("nota")})
     return render_template("alunos.html", registros=registros)
 
 

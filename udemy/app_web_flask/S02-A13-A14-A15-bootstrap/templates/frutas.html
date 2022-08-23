@@ -2,7 +2,12 @@
 {% block conteudo %}
     <h2 style="text-align: center;">Lista de Frutas</h2>
     <hr>
-    <ol>
+    <ul class="list-group">
+        <p>
+        {% for fruta in frutas %}
+            <li class="list-group-item">{{ fruta }}</li>
+        {% endfor %}
+        </p>
         <form action="{{ url_for('home') }}" method="POST">
             <div class="mb-3">
                 <label for="a_fruta" class="form-label">Fruta</label>
@@ -12,10 +17,5 @@
                 <button type="submit" class="btn btn-primary">Adicionar</button>
             </div>
         </form>
-        <p>
-        {% for fruta in frutas %}
-            <li>{{ fruta }}</li>
-        {% endfor %}
-        </p>
-    </ol>
+    </ul>
 {% endblock conteudo %}
