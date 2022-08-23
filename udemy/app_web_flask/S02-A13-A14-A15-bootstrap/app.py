@@ -1,7 +1,8 @@
+from typing import List
 from flask import Flask, render_template, request
 app = Flask(__name__)
 frutas = []
-registros = []
+registros: List = []
 
 
 @app.route("/", methods=["GET", "POST"])
