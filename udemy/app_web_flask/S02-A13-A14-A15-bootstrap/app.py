@@ -3,6 +3,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 frutas = []
 registros: List = []
+existe = False
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -24,7 +25,7 @@ def alunos():
             if not existe:
                 registros.append({"aluno": request.form.get("aluno"),
                                   "nota": request.form.get("nota")})
-    return render_template("alunos.html", registros=registros)
+    return render_template("alunos.html", registros=registros, existe=existe)
 
 
 if __name__ == "__main__""":
