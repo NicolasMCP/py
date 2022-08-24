@@ -3,7 +3,6 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 frutas = []
 registros: List = []
-existe = False
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -16,9 +15,9 @@ def home():
 
 @app.route("/alunos", methods=["GET", "POST"])
 def alunos():
+    existe = False
     if request.method == "POST":
         if request.form.get("aluno") and request.form.get("nota"):
-            existe = False
             for registro in registros:
                 if request.form.get("aluno") == registro["aluno"]:
                     existe = True
