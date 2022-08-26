@@ -9,5 +9,5 @@
 <br><br>[Usando Bootstrap](S02-A13-A14-A15-bootstrap/app.py) Os anteriores usando Bootstrap para o layout
 <br><br>
 <p align="center">
-    <img src="S02-A13-A14-A15-bootstrap\static\PyApp.gif">
+    <img src="https://github.com/NicolasMCP/py/blob/main/udemy/app_web_flask/S02-A13-A14-A15-bootstrap/static/PyApp.gif">
 </p>
