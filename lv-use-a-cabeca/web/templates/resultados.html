@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ subtitulo }}</h2>
+<p>Você enviou os seguintes dados:</p>
+<table>
+  <tr><td>Frase:</td><td>{{ frase }}</td></tr>
+  <tr><td>Letras:</td><td>{{ letras }}</td></tr>
+</table>
+<p>Quando a "{{ frase }}" é pesquisada por "{{ letras }}", os seguintes resultados são retornados:</p>
+<h3>{{ resultados }}</h3>
+{% endblock %}
