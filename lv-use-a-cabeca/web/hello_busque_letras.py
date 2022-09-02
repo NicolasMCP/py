@@ -1,13 +1,8 @@
 import html
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request
 from busque_letras import busque_letras
 
 app = Flask(__name__)
-
-
-@app.route('/')
-def hello() -> '302':
-    return redirect('/entrada')
 
 
 @app.route('/busca', methods=['POST'])
@@ -25,6 +20,7 @@ def busca():
                            resultados=resultados)
 
 
+@app.route('/')
 @app.route('/entrada')
 def entrada() -> 'html':
     return render_template('entrada.html',
