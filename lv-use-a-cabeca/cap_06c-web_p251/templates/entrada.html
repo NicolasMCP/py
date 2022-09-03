@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+<h5>{{ subtitulo }}</h5>
+<form method='POST' action='/busca'>
+<table>
+    <p>Use este formulário para submeter sua busca:</p>
+    <tr><td>Frase:</td><td><input name='frase' type='TEXT' width='60'></td></tr>
+    <tr><td>Letras:</td><td><input name='letras' type='TEXT' value='aeiou'></td></tr>
+</table>
+<p>Quando estiver pronto, clique neste botão:</p>
+<p><input value='Buscar' type='SUBMIT'></p>
+</form>
+{% endblock %}
