@@ -7,11 +7,7 @@ app = Flask(__name__)
 
 def log_request(req: 'request', res: str) -> None:
     with open('busque_letras.log', 'a') as log:
-        # print(str(dir(req)), res, file=log)
-        print(str(req.form)[20:-2], file=log, end=' | ')
-        print(req.remote_addr, file=log, end=' | ')
-        # print(req.user_agent, file=log, end=' | ')
-        print(res, file=log, end='<br>')
+        print(str(req.form)[20:-2], req.remote_addr, res, file=log, sep=' | ', end='<br>')
 
 
 @app.route('/busca', methods=['POST'])
