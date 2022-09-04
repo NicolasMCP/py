@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ subtitulo }}</h2>
+<p>Você enviou os seguintes dados:</p>
+<table>
+  <tr>
+    {% for titulo in titulos_linha %}
+        <th>{{ titulo }}</th>
+    {% endfor %}
+  </tr>
+  {% for linha_registro in conteudo %}
+    <tr>
+        {% for campo in linha_registro %}
+            <td>{{ campo }}</td>
+        {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
+{% endblock %}

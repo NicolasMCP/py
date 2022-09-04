@@ -1,3 +1,4 @@
+from glob import escape
 import html
 from flask import Flask, render_template, request
 from busque_letras import busque_letras
@@ -7,7 +8,7 @@ app = Flask(__name__)
 
 def log_request(req: 'request', res: str) -> None:
     with open('busque_letras.log', 'a') as log:
-        print(str(req.form)[20:-2], req.remote_addr, res, file=log, sep=' | ', end='<br>')
+        print(str(req.form)[20:-2], req.remote_addr, res, file=log, sep=' | ')
 
 
 @app.route('/busca', methods=['POST'])
@@ -34,10 +35,18 @@ def entrada() -> 'html':
 
 
 @app.route('/verlog')
-def ver_log() -> str:
+def ver_log() -> html:
+    conteudo = []
     with open('busque_letras.log') as log:
-        conteudo = log.read()
-        return conteudo
+        for linea in log:
+            conteudo.append([])
+            for item in linea.split('|'):
+                conteudo[-1].append(escape(item))
+    titulos_linha = ('Formulario', 'IP', 'Resultado')
+    return render_template('verlog.html',
+                           subtitulo='Ver Log',
+                           titulos_linha=titulos_linha,
+                           conteudo=conteudo)
 
 
 if __name__ == "__main__":
