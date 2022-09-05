@@ -18,8 +18,8 @@ def log_request(req: 'request', res: str) -> None:
         print(frase, letras, req.remote_addr, res, file=log, sep=' | ')
 
 
-@app.route('/busca', methods=['POST'])
-def busca():
+@app.route('/resultados', methods=['POST'])
+def resultados():
     frase = request.form['frase']
     letras = request.form['letras']
     resultados = busque_letras(frase, letras)
@@ -38,6 +38,7 @@ def busca():
 @app.route('/entrada')
 def entrada() -> 'html':
     return render_template('entrada.html',
+                           titulo='Entrada',
                            subtitulo="Bem vindo ao 'busca_letras' na web")
 
 
@@ -51,7 +52,8 @@ def ver_log() -> html:
                 conteudo[-1].append(escape(item))
     titulos_linha = ('Frase', 'Letras', 'IP', 'Resultado')
     return render_template('verlog.html',
-                           subtitulo='Ver Log',
+                           titulo='VerLog',
+                           subtitulo='Visualização do LOG',
                            titulos_linha=titulos_linha,
                            conteudo=conteudo)
 
