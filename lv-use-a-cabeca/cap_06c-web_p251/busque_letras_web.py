@@ -8,7 +8,14 @@ app = Flask(__name__)
 
 def log_request(req: 'request', res: str) -> None:
     with open('busque_letras.log', 'a') as log:
-        print(str(req.form)[20:-2], req.remote_addr, res, file=log, sep=' | ')
+        frase_letras = str(req.form)[21:-3].split('), (')
+        frase = frase_letras[0][1:-1]
+        frase = frase.split("', '")
+        frase = frase[1]
+        letras = frase_letras[1][1:-1]
+        letras = letras.split("', '")
+        letras = letras[1]
+        print(frase, letras, req.remote_addr, res, file=log, sep=' | ')
 
 
 @app.route('/busca', methods=['POST'])
@@ -42,7 +49,7 @@ def ver_log() -> html:
             conteudo.append([])
             for item in linea.split('|'):
                 conteudo[-1].append(escape(item))
-    titulos_linha = ('Formulario', 'IP', 'Resultado')
+    titulos_linha = ('Frase', 'Letras', 'IP', 'Resultado')
     return render_template('verlog.html',
                            subtitulo='Ver Log',
                            titulos_linha=titulos_linha,

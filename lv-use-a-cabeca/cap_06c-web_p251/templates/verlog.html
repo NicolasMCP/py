@@ -2,10 +2,10 @@
 {% block body %}
 <h2>{{ subtitulo }}</h2>
 <p>Você enviou os seguintes dados:</p>
-<table>
+<table class="table">
   <tr>
     {% for titulo in titulos_linha %}
-        <th>{{ titulo }}</th>
+        <th scope="col">{{ titulo }}</th>
     {% endfor %}
   </tr>
   {% for linha_registro in conteudo %}

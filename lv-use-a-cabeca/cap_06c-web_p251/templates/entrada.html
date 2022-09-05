@@ -2,12 +2,24 @@
 {% block body %}
 <h5>{{ subtitulo }}</h5>
 <form method='POST' action='/busca'>
-<table>
-    <p>Use este formulário para submeter sua busca:</p>
-    <tr><td>Frase:</td><td><input name='frase' type='TEXT' width='60'></td></tr>
-    <tr><td>Letras:</td><td><input name='letras' type='TEXT' value='aeiou'></td></tr>
-</table>
-<p>Quando estiver pronto, clique neste botão:</p>
-<p><input value='Buscar' type='SUBMIT'></p>
+    <div class="form-group">
+        <p>Use este formulário para submeter sua busca:</p>
+        <label for="frase">Frase</label>
+        <input class="form-control" id="frase" name='frase' type='TEXT' width='60'>
+    </div>
+    <p>
+        <div class="form-group">
+            <label for="letras">Letras</label>
+            <input class="form-control" id="letras" name='letras' type='TEXT' value='aeiou'>
+        </div>
+    </p>
+    <p>Quando estiver pronto, clique neste botão:</p>
+    <p><button type="submit" class="btn btn-primary">Buscar</button></p>
 </form>
+<script>
+    window.onload = function () {
+        document.getElementById("frase").focus();
+    }
+</script>
+
 {% endblock %}
