@@ -6,23 +6,23 @@
 <br><br>[Listas dinámicas](S02-A10-Listas-dinamicas/app.py) Exemplo de Lista Dinámica no Flask
 <br><br>[Dicionarios dinámicos](S02-A11-Dic-Dinamicos/app.py) Dicionário Dinámico (dentro de lista) no Flask
 <br><br>[Uso de Templates](templates) Exemplo do uso de templates no Flask
-<br><br>[Usando DB](S02-A21-db/app.py) Mantendo os exemplos anteriores implementando Lista de cursos com DB Sqlite3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (continua depois das 3 imagens...)
+<br><br>[Usando DB](S02-A21-db/app.py) Mantendo os exemplos anteriores implementando Lista de cursos com DB Sqlite3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (continua depois de 4 imagens...)
 <br><br>
 <p align="center">
     <img src="https://raw.githubusercontent.com/NicolasMCP/py/main/udemy/app_web_flask/S02-A21-db/static/lista_cursos.png">
 </p>
 
-<br><br>
+<br>
 <p align="center">
     <img src="https://raw.githubusercontent.com/NicolasMCP/py/main/udemy/app_web_flask/S02-A21-db/static/novo_curso.png">
 </p>
 
-<br><br>
+<br>
 <p align="center">
     <img src="https://raw.githubusercontent.com/NicolasMCP/py/main/udemy/app_web_flask/S02-A21-db/static/Alunos.png">
 </p>
 
-<br><br>
+<br>
 <p align="center">
     <img src="https://raw.githubusercontent.com/NicolasMCP/py/main/udemy/app_web_flask/S02-A21-db/static/frutas.png">
 </p>
