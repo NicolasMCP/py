@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -34,10 +34,13 @@ def cria_curso():
     carga_horaria = request.form.get('carga_horaria')
 
     if request.method == "POST":
-        curso = Cursos(nome, descricao, carga_horaria)
-        db.session.add(curso)
-        db.session.commit()
-        return redirect(url_for('lista_cursos'))
+        if not nome or not descricao or not carga_horaria:
+            flash('Preencha todos os campos do formulário', 'error')
+        else:
+            curso = Cursos(nome, descricao, carga_horaria)
+            db.session.add(curso)
+            db.session.commit()
+            return redirect(url_for('lista_cursos'))
     return render_template("novo_curso.html")
 
 
