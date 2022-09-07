@@ -11,7 +11,8 @@
 <p align="center">
     <img src="https://github.com/NicolasMCP/py/blob/main/udemy/app_web_flask/S02-A13-A14-A15-bootstrap/static/PyApp.gif">
 </p>
-<br><br>[Usando DB](S02-A21-db/app.py) Mantendo os exemplos anteriores implementando Lista de cursos com DB Sqlite3
+<br><br>
+[Usando DB](S02-A21-db/app.py) Mantendo os exemplos anteriores implementando Lista de cursos com DB Sqlite3
 <br><br>
 <p align="center">
     <img src="https://raw.githubusercontent.com/NicolasMCP/py/main/udemy/app_web_flask/S02-A21-db/static/lista_cursos.png">
