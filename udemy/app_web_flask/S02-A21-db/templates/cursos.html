@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <h2 style="text-align: center;">Lista de Cursos</h2>
+    <hr>
+    <table class="table table-striped">
+        <thead class="table-primary">
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Carga Horária</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for curso in cursos %}
+                <tr>
+                    <td>{{ curso.id }}</td>
+                    <td>{{ curso.nome }}</td>
+                    <td>{{ curso.descricao }}</td>
+                    <td>{{ curso.carga_horaria }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="col-lg-12" style="text-align: right;">
+        <a href="{{ url_for('cria_curso') }}" class="btn btn-primary">Adicionar Curso</a>
+    </div>
+{% endblock conteudo %}
