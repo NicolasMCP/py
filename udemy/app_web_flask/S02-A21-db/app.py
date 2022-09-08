@@ -7,6 +7,7 @@ registros = []
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cursos.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.secret_key = b'\xa7\xbb\xec\xa2\xc1\xa3\x0c\x1at\xf6d\xc4R\x8fk\xef'
 db = SQLAlchemy(app)
 
 
@@ -64,6 +65,22 @@ def alunos():
                 registros.append({"aluno": request.form.get("aluno"),
                                   "nota": request.form.get("nota")})
     return render_template("alunos.html", registros=registros, existe=existe)
+
+
+@app.route('/<int:id>/atualiza_curso', methods=["GET", "POST"])
+def atualiza_curso(id):
+    curso = Cursos.query.filter_by(id=id).first()
+    if request.method == "POST":
+        nome = request.form['nome']
+        descricao = request.form['descricao']
+        carga_horaria = request.form['carga_horaria']
+
+        Cursos.query.filter_by(id=id).update({"nome": nome,
+                                              "descricao": descricao,
+                                              "carga_horaria": carga_horaria})
+        db.session.commit()
+        return redirect(url_for('lista_cursos'))
+    return render_template("atualiza_curso.html", curso=curso)
 
 
 if __name__ == "__main__""":

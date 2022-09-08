@@ -1,24 +1,24 @@
 {% extends 'base.html' %}
 {% block conteudo %}
-    <h2 style="text-align: center;">Adicionar novo Curso</h2>
+    <h2 style="text-align: center;">Atualizar Curso</h2>
     <hr>
     {%- for msg in get_flashed_messages() %}
         <div class="alert alert-danger">
             {{ msg }}
         </div>
     {%- endfor %}
-    <form class="form-control" action="{{ url_for('cria_curso') }}" method="POST">
+    <form class="form-control" action="{{ url_for('atualiza_curso', id=curso.id) }}" method="POST">
         <div class="mb-3">
             <label for="nome">Nome</label>
-            <input class="form-control" type="text" name="nome" id="nome" placeholder="Nome do curso" required>
+            <input class="form-control" type="text" name="nome" id="nome" value="{{ curso.nome }}" required>
         </div>
         <div class="mb-3">
             <label for="descricao">Descrição</label>
-            <input class="form-control" type="text" name="descricao" id="descricao" placeholder="Descrição do curso" required>
+            <textarea class="form-control" name="descricao" id="descricao" required>{{ curso.descricao }}</textarea>
         </div>
         <div class="mb-3">
             <label for="carga_horaria">Carga Horária</label>
-            <input class="form-control" type="number" name="carga_horaria" id="carga_horaria" placeholder="Carga horária do curso" required>
+            <input class="form-control" type="number" name="carga_horaria" id="carga_horaria" value="{{ curso.carga_horaria }}" required>
         </div>
         <div class="mb-3">
             <button class="btn btn-primary">Salvar</button>
