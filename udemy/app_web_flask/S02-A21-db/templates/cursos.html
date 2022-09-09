@@ -20,7 +20,9 @@
                     <td>{{ curso.descricao }}</td>
                     <td>{{ curso.carga_horaria }}</td>
                     <td>
-                        <a href="{{ curso.id }}/atualiza_curso"><img src="../static/edit_client.png" alt=""></a>
+                        <a href="{{ curso.id }}/atualiza_curso"><img src="../static/edit_client.png"></a>
+                        <a href="{{ curso.id }}/remove_curso"><img src="../static/delete_client.png" 
+                            onclick="return confirm('Deseja excluir esse registro ?')"></a>
                     </td>
                 </tr>
             {% endfor %}
