@@ -8,7 +8,7 @@
               <th scope="col">Id</th>
               <th scope="col">Nome</th>
               <th scope="col">Descrição</th>
-              <th scope="col">Carga Horária</th>
+              <th scope="col">Horas</th>
               <th scope="col">Ações</th>
             </tr>
         </thead>
@@ -20,9 +20,14 @@
                     <td>{{ curso.descricao }}</td>
                     <td>{{ curso.carga_horaria }}</td>
                     <td>
-                        <a href="{{ curso.id }}/atualiza_curso"><img src="../static/edit_client.png"></a>
-                        <a href="{{ curso.id }}/remove_curso"><img src="../static/delete_client.png" 
-                            onclick="return confirm('Deseja excluir esse registro ?')"></a>
+                        <a href="{{ curso.id }}/atualiza_curso" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar">
+                            <img src="../static/edit_client.png">
+                        </a>
+                        
+                        <a href="{{ curso.id }}/remove_curso" data-bs-toggle="tooltip" data-bs-placement="top" title="Exclui">
+                            <img src="../static/delete_client.png" onclick="return confirm('Deseja excluir esse registro ?')">
+                        </a>
+                        
                     </td>
                 </tr>
             {% endfor %}
