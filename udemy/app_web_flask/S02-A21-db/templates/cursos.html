@@ -20,11 +20,15 @@
                     <td>{{ curso.descricao }}</td>
                     <td>{{ curso.carga_horaria }}</td>
                     <td>
-                        <a href="{{ curso.id }}/atualiza_curso" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar">
+                        <a href="{{ curso.id }}/atualiza_curso" data-bs-toggle="tooltip" 
+                                                                data-bs-placement="top" 
+                                                                data-bs-title="Editar">
                             <img src="../static/edit_client.png">
                         </a>
                         
-                        <a href="{{ curso.id }}/remove_curso" data-bs-toggle="tooltip" data-bs-placement="top" title="Exclui">
+                        <a href="{{ curso.id }}/remove_curso" data-bs-toggle="tooltip" 
+                                                              data-bs-placement="top" 
+                                                              data-bs-title="Excluir">
                             <img src="../static/delete_client.png" onclick="return confirm('Deseja excluir esse registro ?')">
                         </a>
                         
