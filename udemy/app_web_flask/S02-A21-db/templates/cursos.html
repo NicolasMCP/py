@@ -39,32 +39,70 @@
     </table>
     <table class="table table-borderless">
         <tr>
-            <th scope="col-11">
+            <th class="align-bottom" scope="col-11">
+                {% if cursos.page == 1 %}
+                    <!-- desabilitado -->
+                    <img src="../static/primeiro_desabilitado.png" height="40px" width="40px" 
+                                                                   data-bs-toggle="tooltip" 
+                                                                   data-bs-placement="top" 
+                                                                   data-bs-title="Primeiro Curso">
+                {% else %}
+                    <a href="{{ url_for('lista_cursos', page=1) }}" data-bs-toggle="tooltip" 
+                                                                    data-bs-placement="top" 
+                                                                    data-bs-title="Cursos Anteriores">
+                                                                    <img src="../static/primeiro.png"
+                                                                         height="40px" width="40px"></a>
+                {% endif %}
                 {% if cursos.has_prev %}
                     <a href="{{ url_for('lista_cursos', page=cursos.prev_num) }}" data-bs-toggle="tooltip" 
                                                                                 data-bs-placement="top" 
                                                                                 data-bs-title="Cursos Anteriores">
                                                                                 <img src="../static/anterior.png"
-                                                                                height="48px" width="48px"></a>
+                                                                                height="40px" width="40px"></a>
                 {% else %}
                     <!-- desabilitar -->
-                    <img src="../static/anterior_desabilitado.png" height="48px" width="48px" 
+                    <img src="../static/anterior_desabilitado.png" height="40px" width="40px" 
                                                                 data-bs-toggle="tooltip" 
                                                                 data-bs-placement="top" 
-                                                                data-bs-title="Cursos Anteriores &nbsp; Desabilitado">
+                                                                data-bs-title="Cursos Anteriores">
                 {% endif %}
+
+                {% for num in cursos.iter_pages() %}
+                    {% if cursos.page != num %}
+                        <span class="align-bottom" >
+                            <a class='page-number fs-2 text-monospace text-decoration-none'
+                                href="{{ url_for('lista_cursos', page=num) }}">{{num}}</a>&nbsp;
+                        </span>
+                    {% else %}
+                        <span class='align-bottom current-page-number fs-2 text-monospace'>{{num}}&nbsp;</span>
+                    {% endif %}
+                {% endfor %}
+
                 {% if cursos.has_next %}
                     <a href="{{ url_for('lista_cursos', page=cursos.next_num) }}" data-bs-toggle="tooltip" 
                                                                                 data-bs-placement="top" 
                                                                                 data-bs-title="Proximos Cursos">
                                                                                 <img src="../static/proximo.png"
-                                                                                height="48px" width="48px"></a>
+                                                                                height="40px" width="40px"></a>
                 {% else %}
                     <!-- desabilitar -->
-                    <img src="../static/proximo_desabilitado.png" height="48px" width="48px"
+                    <img src="../static/proximo_desabilitado.png" height="40px" width="40px"
                                                                 data-bs-toggle="tooltip" 
                                                                 data-bs-placement="top" 
-                                                                data-bs-title="Proximos Cursos &nbsp; &nbsp; &nbsp; Desabilitado">
+                                                                data-bs-title="Proximos Cursos">
+                {% endif %}
+                {% if cursos.page == cursos.pages %}
+                    <!-- desabilitado -->
+                    <img src="../static/ultimo_desabilitado.png" height="40px" width="40px" 
+                                                                 data-bs-toggle="tooltip" 
+                                                                 data-bs-placement="top" 
+                                                                 data-bs-title="Último Curso">
+                {% else %}
+                    <a href="{{ url_for('lista_cursos', page=cursos.pages) }}" data-bs-toggle="tooltip" 
+                                                                               data-bs-placement="top" 
+                                                                               data-bs-title="Último Curso">
+                                                                               <img src="../static/ultimo.png"
+                                                                                   height="40px" width="40px"></a>
                 {% endif %}
             </th>
             <th scope="col" style="text-align: right;">

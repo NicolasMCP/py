@@ -26,7 +26,7 @@ class Cursos(db.Model):
 @app.route("/cursos")
 def lista_cursos():
     pagina = request.args.get('page', 1, type=int)
-    cada_pagina = 4
+    cada_pagina = 2
     todos_cursos = Cursos.query.paginate(pagina, cada_pagina)
     return render_template("cursos.html", cursos=todos_cursos)
 
