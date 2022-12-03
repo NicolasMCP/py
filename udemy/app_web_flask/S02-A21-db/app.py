@@ -2,8 +2,8 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-frutas = []
-registros = []
+frutas: list = []
+registros: list = []
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cursos.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -26,7 +26,7 @@ class Cursos(db.Model):
 @app.route("/cursos")
 def lista_cursos():
     pagina = request.args.get('page', 1, type=int)
-    cada_pagina = 2
+    cada_pagina = 3
     todos_cursos = Cursos.query.paginate(pagina, cada_pagina)
     return render_template("cursos.html", cursos=todos_cursos)
 
