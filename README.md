@@ -11,3 +11,4 @@
 <br><br>[exemplos](teste-py/src/imprimir) Imprimindo, alguns exemplos interessantes
 <br><br>[tipos](teste-py/src/tipos) Exemplos de tipos que podem enganar...
 <br><br>[Flask](https://github.com/NicolasMCP/py/blob/main/udemy/app_web_flask/README.md) Exemplos com Flask
+<br><br>[Datas, arquivos, loops](https://github.com/NicolasMCP/Python) Datas, arquivos e loops
