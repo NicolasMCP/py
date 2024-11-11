@@ -10,4 +10,4 @@
 <br><br>[Valor maior v1](introducao-py/ex-10_maior.py) De 3 notas mostra o maior, desconsidera iguais (v1)
 <br><br>[Valor maior v3](introducao-py/ex-10_maior_refat.py) De 3 notas mostra o maior, desconsidera iguais (v3 refatorada)
 <br><br>[Valor maior v2](introducao-py/ex-10_maior_igual.py) De 3 notas mostra o maior, considera os iguais (v2 refatorada)
-<br><br>[Valor maior v4](introducao-py/ex-10_maior_igual.py) De 3 notas mostra o maior, considera os iguais (v4 refatorada)
+<br><br>[Valor maior v4](introducao-py/ex-10_maior_iguais_refat.py) De 3 notas mostra o maior, considera os iguais (v4 refatorada)
