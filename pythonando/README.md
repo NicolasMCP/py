@@ -1,6 +1,6 @@
 # Pythonando 
-## [Python Full](https://pythonando.com.br) 
-### Projetos feitos para minha compreensão e desenvolvimentos referente ao curso acima
+## [Python Full](https://pythonando.com.br) Python Full é um curso da Pythonando.com.br (direitos reservados)
+##### Projetos feitos para minha compreensão e desenvolvimentos referente ao curso acima
 ### Meus códigos
 
 ![license1](https://img.shields.io/static/v1?label=License&message=MIT&color=orange)
