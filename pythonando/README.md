@@ -1,5 +1,5 @@
 # Pythonando 
-## [Python Full](https://pythonando.com.br) Python Full é um curso da Pythonando.com.br (direitos reservados)
+## [Python Full](https://pythonando.com.br) é um curso da Pythonando.com.br (direitos reservados)
 ##### Projetos feitos para minha compreensão e desenvolvimentos referente ao curso acima
 ### Meus códigos
 
