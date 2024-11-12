@@ -20,6 +20,7 @@
 <br><br>[Pares n](introducao-py/ex-18_pares.py) Verificar os pares até 'n'
 <br><br>[For](introducao-py/ex-19_for.py) for
 <br><br>[Pares com For](introducao-py/ex-22_for_pares_0_1000.py) Pares entre 1 e 1000 com For
-<br><br>
+<br><br>[Listas](introducao-py/listas.py) Iterando listas
+<br><br>[Usar Debug](introducao-py/while_debug.py) Como podemos usar o Debug no Python, lembre de colocar o BrakePoint
 <br><br>
 <br><br>
