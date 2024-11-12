@@ -14,3 +14,4 @@
 <br><br>[Datas, arquivos, loops](https://github.com/NicolasMCP/Python) Datas, arquivos e loops
 <br><br>[Pythonando](https://github.com/NicolasMCP/py/tree/main/pythonando/README.md) Micro exemplos código meu não do Profe.Caio
 <br><br>[Treinando Python](https://github.com/NicolasMCP/treinando/blob/main/README.md) Diversos tipos de Exercicios Python
+<br><br>[Python Primeiros Pasos](https://github.com/NicolasMCP/CursoEmVideo-Python/blob/main/README.md) Coisas de Python para quem inicia
