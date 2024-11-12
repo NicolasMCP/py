@@ -1,6 +1,6 @@
-# Receba 'F' para Feminino e 'M' para Masculino, e exiba o sexo da pessoa
+# Receba 'M' para Masculino e 'F' para Feminino, e exiba o sexo da pessoa
 
-sexo = input('Digite o sexo (F/M):')
+sexo = input('Digite o sexo (M/F):')
 
 if sexo == 'F' or sexo == 'f':
     print('Sexo: Femenino')

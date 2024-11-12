@@ -1,4 +1,4 @@
-# Receba um número e exiba se ele é positivo ou negativo
+# Receba um número e exiba se ele é positivo, negativo ou neutro
 
 num = float(input('Digite um número: '))
 
