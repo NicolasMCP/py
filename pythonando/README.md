@@ -13,8 +13,13 @@
 <br><br>[Valor maior v4](introducao-py/ex-10_maior_iguais_refat.py) De 3 notas mostra o maior, considera os iguais (v4 refatorada)
 <br><br>[Positivo,Negativo,Neutro](introducao-py/ex-11_positivo_negativo.py) Receba e avalie um número como Positivo, Negativo ou Neutro
 <br><br>[Masculino/Femenino](introducao-py/ex-12_masc_fem.py) Escolha 'M' ou 'F'
-<br><br>[Tabuada](introducao-py/ex-15_tabuada.py)Tabuada do Número fornecido
+<br><br>[Tabuada](introducao-py/ex-15_tabuada.py) Tabuada do Número fornecido
 <br><br>[Intervalo de Notas](introducao-py/ex-16_intervalo_nota.py) Receba Notas de Alunos dentro de um intervalo
 <br><br>[Intervalo de Notas v2](introducao-py/ex-16_intervalo_nota_v2.py) Receba Notas de Alunos dentro de um intervalo Versão 2
 <br><br>[Teste usuário e senha](introducao-py/ex-17_user_pass.py) Verificar se o Login é válido
+<br><br>[Pares n](introducao-py/ex-18_pares.py) Verificar os pares até 'n'
+<br><br>[For](introducao-py/ex-19_for.py) for
+<br><br>[Pares com For](introducao-py/ex-22_for_pares_0_1000.py) Pares entre 1 e 1000 com For
+<br><br>
+<br><br>
 <br><br>
