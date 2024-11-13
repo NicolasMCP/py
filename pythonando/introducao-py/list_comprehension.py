@@ -1,5 +1,7 @@
 import random
 
+# estou usando números inteiros apenas por didática
+
 print('\nExemplo 1\n')
 
 x = [f'5 x {i} = {i*5}' for i in range(1, 11)]
@@ -17,7 +19,7 @@ print(l)
 print('\nExemplo 3\n')
 
 # preserve somente os valores até 2500 usando a lista 'l'
-z = [i for i in l if i < 2500]
+z = [i for i in l if i <= 2500]
 print(z)
 
 print()
