@@ -22,5 +22,7 @@
 <br><br>[Pares com For](introducao-py/ex-22_for_pares_0_1000.py) Pares entre 1 e 1000 com For
 <br><br>[Listas](introducao-py/listas.py) Iterando listas
 <br><br>[Usar Debug](introducao-py/while_debug.py) Como podemos usar o Debug no Python, lembre de colocar o BrakePoint
-<br><br>[Entra e soma 10](introducao-py/ex-25_Soma-10.py) Entrada e soma de 10 números
+<br><br>[Entra e soma 10](introducao-py/ex-25_Soma-10.py) Entrada e soma de 10 números com list comprehension
+<br><br>[List Comprehension](introducao-py/list_comprehension.py) Alguns exemplos usando List Comprehension
+<br><br>
 <br><br>
