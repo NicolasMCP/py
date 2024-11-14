@@ -5,5 +5,6 @@
 
 ![license1](https://img.shields.io/static/v1?label=License&message=MIT&color=orange)
 <br><br>[Tupla](<py-impressionador/M11/Tupla 04.ipynb>) Como usar a Tupla
+<br><br>[Ex.Tupla](<py-impressionador/M11/Exercícios de Tupla.ipynb>) Exercicios com Tuplas
 <br><br>
 <br><br>
