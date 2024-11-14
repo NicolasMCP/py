@@ -12,6 +12,7 @@
 <br><br>[tipos](teste-py/src/tipos) Exemplos de tipos que podem enganar...
 <br><br>[Flask](https://github.com/NicolasMCP/py/blob/main/udemy/app_web_flask/README.md) Exemplos com Flask
 <br><br>[Datas, arquivos, loops](https://github.com/NicolasMCP/Python) Datas, arquivos e loops
-<br><br>[Pythonando](https://github.com/NicolasMCP/py/tree/main/pythonando/README.md) Micro exemplos código meu não do Profe.Caio
+<br><br>[Pythonando](https://github.com/NicolasMCP/py/tree/main/pythonando/README.md) Micro exemplos código meu, não do Profe.Caio
+<br><br>[Hashtag](hashtag/README.md) Micro exemplos de código e resolução de exercícios meus, não do Profe.Lira
 <br><br>[Treinando Python](https://github.com/NicolasMCP/treinando/blob/main/README.md) Diversos tipos de Exercicios Python
 <br><br>[Python Primeiros Pasos](https://github.com/NicolasMCP/CursoEmVideo-Python/blob/main/README.md) Coisas de Python para quem inicia
