@@ -2,8 +2,8 @@
 # armazenando nome, idade, rg
 
 pessoas = []
-nome = input('Digite o nome: ')  # *
-while nome.strip() != '':        # *
+nome = input('Digite o nome: ')  # Contribuição de Evandro Neto
+while nome.strip() != '':        # Contribuição de Evandro Neto
     pessoa = {'nome': nome,
               'idade': input('Digite a idade: '),
               'RG': input('Digite o RG: ')}
@@ -12,5 +12,3 @@ while nome.strip() != '':        # *
     nome = input('Digite o nome: ')
 
 print('\n' + ('\n\n'.join('\n'.join(f"'{chave}': '{conteudo}'" for chave, conteudo in pessoa.items()) for pessoa in pessoas)) + '\n\nFim do programa')
-
-# * Contribuição de Evandro Neto (Comunidade Pythonando, Discord)
