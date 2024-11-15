@@ -24,5 +24,6 @@
 <br><br>[Usar Debug](introducao-py/while_debug.py) Como podemos usar o Debug no Python, lembre de colocar o BrakePoint
 <br><br>[Entra e soma 10](introducao-py/ex-25_Soma-10.py) Entrada e soma de 10 números com list comprehension
 <br><br>[List Comprehension](introducao-py/list_comprehension.py) Alguns exemplos usando List Comprehension
-<br><br>
+<br><br>[Registre n Pessoas](introducao-py/ex-27_n-pessoas.py) Registrar Nome, idade e RG de n Pessoas
+<br><br>[Registre n Pessoas v2](introducao-py/ex-27_n-pessoas_v2.py) egistrar Nome, idade e RG de n Pessoas v2
 <br><br>
