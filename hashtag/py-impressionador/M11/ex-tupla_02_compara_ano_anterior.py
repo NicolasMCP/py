@@ -24,5 +24,7 @@ vendas_produtos = [('iphone', 558147, 951642),
                    ('microfone', 328311, 644622), 
                    ('câmera canon', 591120, 994303)]
 
-print(*[f'Produto {produto} em 2019 vendido {venda2019} em 2020 vendido {venda2020} o crescimento foi de {(venda2020 / venda2019 - 1):.1%}' for produto, venda2019, venda2020 in vendas_produtos if venda2020 > venda2019], sep='\n')
+print(*[f'Produto {produto} em 2019 vendido {venda2019} em 2020 vendido {venda2020} o crescimento foi de { \
+    (venda2020 / venda2019 - 1):.1%}' for produto, venda2019, venda2020 in vendas_produtos if venda2020 > venda2019 \
+        ], sep='\n')
 
