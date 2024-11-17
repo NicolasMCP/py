@@ -1,5 +1,5 @@
 # 1. Análise de Vendas
-#    Nesse exercício vamos fazer uma "análise simples" de atingimento de Meta.
+#    Nesse exercício vamos fazer uma "análise simples" de atingir a Meta.
 #    Temos uma lista com os vendedores e os valores de vendas e queremos identificar 
 #    (print) quais os vendedores que bateram a meta e qual foi o valor que eles venderam.
 
