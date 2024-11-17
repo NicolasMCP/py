@@ -8,5 +8,6 @@
 <br><br>[Tupla comparar dados anuais](py-impressionador/M11/ex-tupla_02_compara_ano_anterior.py) Exercício de tupla, comparando dados anuais de vendas
 <br><br>[Analise vendas Tupla](py-impressionador/M11/ex-tupla_04_analise_vendas.py) Analisando vendas em dias específicos, dados em Tuplas
 <br><br>[Dic chave direto](py-impressionador/M12/ex-dic_01.py) Dicionario usando diretamente a chave. Para Inserir e Atualizar.
+<br><br>[Dic update](py-impressionador/M12/ex-dic_02.py) Dicionario usando update. Para Inserir e Atualizar.
 <br><br>
 <br><br>
