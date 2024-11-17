@@ -1,4 +1,4 @@
-print('Para lembrar uso direto, com update\n------------------------------------')
+print('Para lembrar uso com update\n---------------------------')
 
 dicionario = {}
 
