@@ -1,5 +1,5 @@
 # Escreva um programa que receba notas de um aluno (0-10), caso a nota
-# esteja fora desse intervalo peça para o profesor digitar novamente
+# esteja fora desse intervalo peça para o professor digitar novamente
 
 while True:
     nota = int(input('Digite a nota no intervalo (0-10): '))

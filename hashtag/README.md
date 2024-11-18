@@ -9,5 +9,5 @@
 <br><br>[Analise vendas Tupla](py-impressionador/M11/ex-tupla_04_analise_vendas.py) Analisando vendas em dias específicos, dados em Tuplas
 <br><br>[Dic chave direto](py-impressionador/M12/ex-dic_01-chave.py) Dicionario usando diretamente a chave. Para Inserir e Atualizar.
 <br><br>[Dic update](py-impressionador/M12/ex-dic_02-update.py) Dicionario usando update. Para Inserir e Atualizar.
-<br><br>
+<br><br>[ex-dic_03-outros-comportamentos.py](py-impressionador/M12/ex-dic_03-outros-comportamentos.py)
 <br><br>
