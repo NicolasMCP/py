@@ -10,4 +10,5 @@
 <br><br>[Dic chave direto](py-impressionador/Dicionarios/ex-dic_por-chave.py) Dicionario usando diretamente a chave. Para Inserir e Atualizar.
 <br><br>[Dic update](py-impressionador/Dicionarios/ex-dic_por-update.py) Dicionario usando update. Para Inserir e Atualizar.
 <br><br>[Dic Outros Comportamentos](py-impressionador/Dicionarios/ex-dic_outros-comportamentos.py) Verificando outros comportamentos.
+<br><br>[Dic Remover dados](py-impressionador/Dicionarios/ex-dic_remocao-de-dados.py) Exemplos de remover dados
 <br><br>
