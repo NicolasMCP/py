@@ -1,4 +1,4 @@
-nomes = ['Cristina', 'Nícolas', 'Alejandra', 'Lujan', 'Silvia', 'Macarena', 'Estela', 'Guadalupe']
+nomes = ['Cristina', 'Nícolas', 'Lujan', 'Silvia', 'Estela', 'Macarena', 'Alejandra', 'Guadalupe']
 
 print('_'*90, end='\n\n')
 
@@ -8,6 +8,6 @@ for i in nomes:
 print('_'*90, end='\n\n')
 
 for i, n in enumerate(nomes):
-    print(f'Nome_{i+1}: {n}')
+    print(f'Nome {i+1}: {n}')
 
 print('_'*90, end='\n\n')
