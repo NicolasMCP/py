@@ -67,3 +67,9 @@ venv/
 lv-use-a-cabeca/códigos do autor
 # temporario
 *.xcf
+
+# códigos a ignorar
+pythonando/solucoes_ex/ex-produtos-de-array-v3.py
+
+
+
